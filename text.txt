@@ -1,0 +1,29 @@
+Display Properties in CSS:
+
+1. display: block;
+- Elements with display: block start on a new line and take up the full width available.
+- Examples: <div>, <h1>–<h6>, <p>
+- Properties commonly used:
+    - width, height
+    - margin, padding
+    - border
+
+2. display: inline;
+- Elements with display: inline do not start on a new line and only take up as much width as necessary.
+- Examples: <span>, <a>, <strong>
+- Properties commonly used:
+    - margin-left, margin-right (top/bottom margins may not work)
+    - padding-left, padding-right
+    - width and height are ignored
+
+3. display: flex;
+- Enables a flex container for flexible layouts.
+- Children become flex items and can be arranged in rows or columns.
+- Properties for the flex container:
+    - flex-direction: row | column | row-reverse | column-reverse
+    - justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly
+    - align-items: stretch | flex-start | flex-end | center | baseline
+    - flex-wrap: nowrap | wrap | wrap-reverse
+- Properties for flex items:
+    - flex-grow, flex-shrink, flex-basis
+    - align-self

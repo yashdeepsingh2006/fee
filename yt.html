@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>YouTube Style Navbar</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .yt-navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: #fff;
+            height: 56px;
+            border-bottom: 1px solid #e5e5e5;
+            padding: 0 16px;
+        }
+        .yt-navbar .left {
+            display: flex;
+            align-items: center;
+        }
+        .yt-navbar .menu-icon {
+            font-size: 24px;
+            cursor: pointer;
+            margin-right: 16px;
+        }
+        .yt-navbar .logo {
+            height: 24px;
+        }
+        .yt-navbar .center {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+        }
+        .yt-navbar .search-bar {
+            display: flex;
+            width: 500px;
+            max-width: 100%;
+        }
+        .yt-navbar input[type="text"] {
+            width: 100%;
+            padding: 8px 12px;
+            border: 1px solid #ccc;
+            border-right: none;
+            border-radius: 2px 0 0 2px;
+            font-size: 16px;
+            outline: none;
+        }
+        .yt-navbar .search-btn {
+            background: #f8f8f8;
+            border: 1px solid #ccc;
+            border-left: none;
+            border-radius: 0 2px 2px 0;
+            padding: 0 16px;
+            cursor: pointer;
+            font-size: 18px;
+        }
+        .yt-navbar .right {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .yt-navbar .icon-btn {
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 22px;
+            color: #606060;
+        }
+        .yt-navbar .avatar {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background: #ccc;
+            display: inline-block;
+        }
+       
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <nav class="yt-navbar">
+        <div class="left">
+            <span class="menu-icon"><i class="fas fa-bars"></i></span>
+            <img class="logo" src="https://www.gstatic.com/youtube/img/branding/youtubelogo/svg/youtubelogo.svg" alt="YouTube Logo">
+        </div>
+        <div class="center">
+            <form class="search-bar" action="#" method="get">
+                <input type="text" style=" border-top-left-radius: 5rem; border-bottom-left-radius: 5rem;" placeholder="Search">
+                <button class="search-btn" style="border-top-right-radius: 5rem; border-bottom-right-radius: 5rem;" type="submit"><i class="fas fa-search"></i></button>
+                <span style="border: 1px solid black; padding: 10px 14px; border-radius: 5rem;"><i class="fas fa-microphone"></i></span>
+            </form>
+        </div>
+        <div class="right">
+            <span style="border: 1px solid black; padding: 10px 10px; border-radius: 5rem;"> <i class="fas fa-plus" style="margin-right: 7px;"></i>Create</span>
+            <button class="icon-btn"><i class="fas fa-bell"></i></button>
+            <span class="avatar"><img style="height: 2.5rem; width: 2.5rem;" src="https://yt3.ggpht.com/Ky_M6sDRPCme1NO-W0XGrhcaIvTczJSwjUYFIK3lv7tDpx8NMdJ23A1NLiAymYLToA8V6k3y=s88-c-k-c0x00ffffff-no-rj" alt=""></span>
+        </div>
+    </nav>
+
+    <aside class="sidebar" style="position: fixed; top: 56px; left: 0; width: 220px; height: calc(100% - 56px); background: #fff; border-right: 1px solid #e5e5e5; padding-top: 12px;">
+        <ul style="list-style: none; padding: 0; margin: 0;">
+            <li style="padding: 10px 24px; display: flex; align-items: center; cursor: pointer;">
+                <i class="fas fa-home" style="margin-right: 24px;"></i> Home
+            </li>
+            <li style="padding: 10px 24px; display: flex; align-items: center; cursor: pointer;">
+                <i class="fas fa-fire" style="margin-right: 24px;"></i> Trending
+            </li>
+            <li style="padding: 10px 24px; display: flex; align-items: center; cursor: pointer;">
+                <i class="fas fa-folder" style="margin-right: 24px;"></i> Subscriptions
+            </li>
+            <hr style="margin: 8px 0;">
+            <li style="padding: 10px 24px; display: flex; align-items: center; cursor: pointer;">
+                <i class="fas fa-photo-video" style="margin-right: 24px;"></i> Library
+            </li>
+            <li style="padding: 10px 24px; display: flex; align-items: center; cursor: pointer;">
+                <i class="fas fa-history" style="margin-right: 24px;"></i> History
+            </li>
+            <li style="padding: 10px 24px; display: flex; align-items: center; cursor: pointer;">
+                <i class="fas fa-clock" style="margin-right: 24px;"></i> Watch Later
+            </li>
+            <li style="padding: 10px 24px; display: flex; align-items: center; cursor: pointer;">
+                <i class="fas fa-thumbs-up" style="margin-right: 24px;"></i> Liked Videos
+            </li>
+        </ul>
+    </aside>
+
+    <main style="margin-top: 5rem; text-align: center; padding: 20px;">
+        <h1>Welcome to YouTube</h1>
+        <p>This is a simple YouTube-style navbar and sidebar layout.</p>
+        <p>You can add more content here as needed.</p>
+    </main>
+
+</body>
+</html>

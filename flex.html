@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flexbox Example</title>
+    <style>
+        .flex-container {
+            display: flex;
+            gap: 16px;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+        .flex-container2 {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+        .flex-item {
+            background: #4CAF50;
+            color: white;
+            padding: 20px;
+            font-size: 1.2em;
+            border-radius: 8px;
+            flex: 1;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <span class="flex-item">Item 1</span>
+        <span class="flex-item">Item 2</span>
+        <span class="flex-item">Item 3</span>
+    </div>
+
+
+    <div class="flex-container2">
+        <span class="flex-item">Item 1</span>
+        <span class="flex-item">Item 2</span>
+        <span class="flex-item">Item 3</span>
+    </div>
+</body>
+</html>

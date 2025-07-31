@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DiscoveryLand</title>
+    <style>
+        body {
+            margin: 0;
+            width: 100%;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            background: #f0f2f5;
+            background-image: url(https://www.datocms-assets.com/128889/1714657126-bakers-bay-golf-and-ocean-club-copy.jpg?auto=format&fit=max&h=3000&w=2000);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        nav {
+            width: 90%;
+            height: 100px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 40px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            font-weight: bold;
+            font-size: 1.7em;
+            color: #2d5c4d;
+            margin-top: 5px;
+        }
+
+        .logo img {
+            width: 150px;
+            height: 30px;
+            border-radius: 12px;
+            margin-right: 15px;
+            object-fit: cover;
+            cursor: pointer;
+        }
+
+        .links ul {
+            display: flex;
+            gap: 10px;
+        }
+
+        .links li {
+            list-style: none;
+        }
+
+        .links a {
+            text-decoration: none;
+            color: #2d5c4d;
+            font-weight: 500;
+            font-size: 1.2em;
+            padding: 8px 18px;
+            border-radius: 6px;
+            color: #fff;
+            position: relative;
+        }
+
+        .links a::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 0;
+            height: 3px;
+            background: #fff;
+            transition: 0.3s;
+        }
+
+        .links a:hover::after {
+            width: 100%;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+            font-size: 1.8rem;
+            color: #fff;
+        }
+
+        .container h1 {
+            text-align: center;
+            font-size: 3em;
+            font-weight: 400;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img src="https://discoverylandco.com/logo-dark.svg" alt="none">
+        </div>
+        <div class="links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <h1 class="first"><i>Discover</i><br>Your World </h1>
+    </div>
+
+</body>
+
+</html>
